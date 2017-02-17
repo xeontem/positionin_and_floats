@@ -14,6 +14,10 @@ body {
 	line-height: 1.3;
 }
 
+H1, H2 {
+	font-weight: lighter;
+}
+
 .main {
 
 }
@@ -126,6 +130,10 @@ body {
 	border: solid 1px;
 	width: 88px;
 	height: 70px;
+}
+
+.socials H2 {
+	margin: 5px;
 }
 
 .container {
