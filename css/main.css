@@ -4,13 +4,12 @@
 }  
 
 body {
-	display: block;
+	
 	margin: 200px 0 0 0;
 	font-family: 'PT Sans', sans-serif;
 	font-size: 0.7rem;
 	color: #333;
 	height: 2000px;
-	/* background-color: #f0f; */
 	line-height: 1.3;
 }
 
@@ -23,35 +22,43 @@ H1, H2 {
 	font-weight: lighter;
 }
 
+.main {
+	position: relative;
+}
+
 .page1, .page2, .page3 {
 	padding: 11px 32px 32px 32px;
 	border: solid 2px;
-	position: relative;
+	
 	background-color: #ff0;
 	width: 455px;
 	margin: auto;
 }
 
 .page1 { 
-	top: -6px;
+	position: relative;
 	z-index: 3;
 	background-color: #ebebeb;
 }
 
 .page2 { 
+	position: absolute;
 	z-index: 2;
 	background-color: #ccc;
-	/* height: 690px; */
-	top: -723px;
+	top: 20px;
 	right: -20px;
+	bottom: -20px;
+	left: 20px;
 }
 
 .page3 { 
+	position: absolute;
 	z-index: 1;
 	background-color: #acacac;
-	/* height: 690px; */
-	top: -1440px;
+	top: 40px;
 	right: -40px;
+	bottom: -40px;
+	left: 40px;
 }
 
 .bookmark-orange {
@@ -118,6 +125,7 @@ H1, H2 {
 	border: solid 1px;
 	width: 88px;
 	height: 70px;
+	z-index: 10;
 }
 
 .socials H2 {
